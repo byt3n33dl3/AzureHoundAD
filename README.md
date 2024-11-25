@@ -22,7 +22,7 @@ AzureHoundAD uses the `Microsoft` Graph and Azure REST APIs to collect data. It 
 
 - AzureHound is a Go binary that collects data from AzureAD and AzureRM via the MS Graph and Azure REST APIs. 
 
-# Get AzureHoundAD
+## Get AzureHoundAD
 
 <p align="center">
   <a href="#crawler-configuration">Config</a> •
@@ -39,7 +39,7 @@ The rolling release contains pre-built binaries that are automatically kept up-t
 
 ## Compiling
 
-- Go [1.18](https://go.dev/dl) or later
+- Go [1.21](https://go.dev/dl) or later
 
 To build this project from source run the following:
 
@@ -102,6 +102,7 @@ Flags:
 
 Use "azurehound [command] --help" for more information about a command.
 ```
+# Thanks To
 
 <p align="left">
 <a href="https://github.com/byt3n33dl3"><img src="https://avatars.githubusercontent.com/u/151133481?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
