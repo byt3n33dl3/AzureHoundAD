@@ -12,15 +12,23 @@
   <a href="#scope-control">Scope</a>
 </p>
 
+<p align="center">
 The Attack Path Management data collector for Microsoft Azure
 
-AzureHound collects data from Azure Active Directory (AzureAD) and Azure Resource Manager (AzureRM). It can then send this data to Attack Path Management, maybe BloodHound Enterprise for processing and analysis.
+AzureHoundAD collects data from Azure Active Directory (AzureAD) and Azure Resource Manager (AzureRM). It can then send this data to Attack Path Management, maybe BloodHound Enterprise for processing and analysis.
+</p>
 
-AzureHound uses the Microsoft Graph and Azure REST APIs to collect data. It can run on any operating system and doesn't require any external dependencies. Authentication Attack with AzureHound supports several authentication flows, including username or password, JWT, refresh token, service principal secret, and service principal certificate.
+AzureHoundAD uses the `Microsoft` Graph and Azure REST APIs to collect data. It can run on any operating system and doesn't require any external dependencies. Authentication Attack with AzureHoundAD supports several `Authentication` flows, including username or password, JWT, refresh token, service principal secret, and service principal certificate.
 
 - AzureHound is a Go binary that collects data from AzureAD and AzureRM via the MS Graph and Azure REST APIs. 
 
 # Get AzureHoundAD
+
+<p align="center">
+  <a href="#crawler-configuration">Config</a> •
+  <a href="#filters">Filters</a> •
+  <a href="https://discord.gg/projectdiscovery">AzureAD</a>
+</p>
 
 Download the appropriate binary for your platform from one of our [Releases](https://github.com/byt3n33dl3/AzureHoundAD/releases).
 
