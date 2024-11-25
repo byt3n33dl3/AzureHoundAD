@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <members>
+    <member name="GetUnknownValueAsync(RequestContent,RequestContext)">
+      <example>
+This sample shows how to call GetUnknownValueAsync.
+<code><![CDATA[
+Uri endpoint = new Uri("<endpoint>");
+AzureKeyCredential credential = new AzureKeyCredential("<key>");
+EnumTest client = new NewProjectTypeSpecClient(endpoint, credential).GetEnumTestClient();
+
+using RequestContent content = RequestContent.Create("Monday");
+Response response = await client.GetUnknownValueAsync(content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call GetUnknownValueAsync with all request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<endpoint>");
+AzureKeyCredential credential = new AzureKeyCredential("<key>");
+EnumTest client = new NewProjectTypeSpecClient(endpoint, credential).GetEnumTestClient();
+
+using RequestContent content = RequestContent.Create("Monday");
+Response response = await client.GetUnknownValueAsync(content);
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+    <member name="GetUnknownValue(RequestContent,RequestContext)">
+      <example>
+This sample shows how to call GetUnknownValue.
+<code><![CDATA[
+Uri endpoint = new Uri("<endpoint>");
+AzureKeyCredential credential = new AzureKeyCredential("<key>");
+EnumTest client = new NewProjectTypeSpecClient(endpoint, credential).GetEnumTestClient();
+
+using RequestContent content = RequestContent.Create("Monday");
+Response response = client.GetUnknownValue(content);
+
+Console.WriteLine(response.Status);
+]]></code>
+This sample shows how to call GetUnknownValue with all request content.
+<code><![CDATA[
+Uri endpoint = new Uri("<endpoint>");
+AzureKeyCredential credential = new AzureKeyCredential("<key>");
+EnumTest client = new NewProjectTypeSpecClient(endpoint, credential).GetEnumTestClient();
+
+using RequestContent content = RequestContent.Create("Monday");
+Response response = client.GetUnknownValue(content);
+
+Console.WriteLine(response.Status);
+]]></code></example>
+    </member>
+  </members>
+</doc>

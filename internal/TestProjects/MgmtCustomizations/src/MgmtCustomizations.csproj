@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>This is the MgmtCustomizations client library for developing .NET applications with rich experience.</Description>
+    <AssemblyTitle>Azure SDK Code Generation MgmtCustomizations for Azure Data Plane</AssemblyTitle>
+    <Version>1.0.0-beta.1</Version>
+    <PackageTags>MgmtCustomizations</PackageTags>
+    <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
+    <IncludeOperationsSharedSource>true</IncludeOperationsSharedSource>
+    <ApiCompatVersion>1.0.0</ApiCompatVersion>
+  </PropertyGroup>
+</Project>

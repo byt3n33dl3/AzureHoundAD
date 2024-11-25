@@ -1,0 +1,14 @@
+{
+  "output-folder": ".",
+  "namespace": "security_key_LowLevel",
+  "library-name": "AutorestSecurityKey",
+  "shared-source-folders": [
+    "..\\..\\..\\..\\..\\artifacts\\bin\\AutoRest.CSharp\\Debug\\net8.0\\Generator.Shared",
+    "..\\..\\..\\..\\..\\artifacts\\bin\\AutoRest.CSharp\\Debug\\net8.0\\Azure.Core.Shared"
+  ],
+  "public-clients": true,
+  "skip-csproj-packagereference": true,
+  "use-model-reader-writer": true,
+  "flavor": "azure",
+  "helper-namespace": "security_key_LowLevel"
+}
