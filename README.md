@@ -1,7 +1,7 @@
 <h1 align="center">AzureHoundAD</h1>
 
 <h1 align="center">
-  <img src="/img/master.png" alt="AzureHoundAD" width="280px">
+  <a href=https://github.com/byt3n33dl3/AzureHoundAD><img src="/img/master.png" alt="AzureHoundAD" width="280px">
   <br>
 </h1>
 
@@ -9,7 +9,7 @@
   <a href="#features">Features</a> •
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
-  <a href="#scope-control">Scope</a>
+  <a href="#Command-Line">Scope</a>
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@ The rolling release contains pre-built binaries that are automatically kept up-t
 
 To build this project from source run the following:
 
-```sh
+```ps1
 go build -ldflags="-s -w -X github.com/byt3n33dl3/AzureHoundAD/v2/constants.Version=`git describe tags --exact-match 2> /dev/null || git rev-parse HEAD`"
 ```
 
@@ -51,19 +51,19 @@ go build -ldflags="-s -w -X github.com/byt3n33dl3/AzureHoundAD/v2/constants.Vers
 
 **Print all Azure Tenant data to stdout**
 
-```sh
+```ps1
 ❯ azurehound list -u "$USERNAME" -p "$PASSWORD" -t "$TENANT"
 ```
 
 **Print all Azure Tenant data to file**
 
-```sh
+```ps1
 ❯ azurehound list -u "$USERNAME" -p "$PASSWORD" -t "$TENANT" -o "mytenant.json"
 ```
 
 **Configure and start data collection service for BloodHound Enterprise**
 
-```sh
+```ps1
 ❯ azurehound configure
 (follow prompts)
 
@@ -72,7 +72,7 @@ go build -ldflags="-s -w -X github.com/byt3n33dl3/AzureHoundAD/v2/constants.Vers
 
 ## Command Line
 
-```
+```ps1
 ❯ azurehound --help
 AzureHound vx.x.x
 Created by the BloodHound Enterprise team -
