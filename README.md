@@ -1,19 +1,28 @@
-# AzureHoundAD
+<h1 align="center">AzureHoundAD</h1>
 
-The BloodHound data collector for Microsoft Azure
+<h1 align="center">
+  <img src="/img/master.png" alt="AzureHoundAD" width="280px">
+  <br>
+</h1>
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/byt3n33dl3/AzureHoundAD/build.yml)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/byt3n33dl3/AzureHoundAD)
-![GitHub all releases](https://img.shields.io/github/downloads/byt3n33dl3/AzureHoundAD/total)
-[![Documentation](https://img.shields.io/static/v1?label=&message=documentation&color=blue)](https://pkg.go.dev/github.com/byt3n33dl3/azurehoundad)
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#scope-control">Scope</a>
+</p>
 
-## Get AzureHoundAD
+The Attack Path Management data collector for Microsoft Azure
 
-#### Release Binaries
+AzureHound collects data from Azure Active Directory (AzureAD) and Azure Resource Manager (AzureRM). It can then send this data to Attack Path Management, maybe BloodHound Enterprise for processing and analysis.
+
+AzureHound uses the Microsoft Graph and Azure REST APIs to collect data. It can run on any operating system and doesn't require any external dependencies. Authentication Attack with AzureHound supports several authentication flows, including username or password, JWT, refresh token, service principal secret, and service principal certificate.
+
+- AzureHound is a Go binary that collects data from AzureAD and AzureRM via the MS Graph and Azure REST APIs. 
+
+# Get AzureHoundAD
 
 Download the appropriate binary for your platform from one of our [Releases](https://github.com/byt3n33dl3/AzureHoundAD/releases).
-
-#### Rolling Release
 
 The rolling release contains pre-built binaries that are automatically kept up-to-date with the `main` branch and can be downloaded from
 [here](https://github.com/byt3n33dl3/AzureHoundAD/releases/tag/rolling).
@@ -22,9 +31,7 @@ The rolling release contains pre-built binaries that are automatically kept up-t
 
 ## Compiling
 
-#### Prerequisites
-
-- [Go 1.18](https://go.dev/dl) or later
+- Go [1.18](https://go.dev/dl) or later
 
 To build this project from source run the following:
 
@@ -33,8 +40,6 @@ go build -ldflags="-s -w -X github.com/byt3n33dl3/AzureHoundAD/v2/constants.Vers
 ```
 
 ## Usage
-
-#### Quickstart
 
 **Print all Azure Tenant data to stdout**
 
@@ -57,12 +62,12 @@ go build -ldflags="-s -w -X github.com/byt3n33dl3/AzureHoundAD/v2/constants.Vers
 ❯ azurehound start
 ```
 
-## CLI
+## Command Line
 
 ```
 ❯ azurehound --help
 AzureHound vx.x.x
-Created by the BloodHound Enterprise team - https://bloodhoundenterprise.io
+Created by the BloodHound Enterprise team -
 
 The official tool for collecting Azure data for BloodHound and BloodHound Enterprise
 
@@ -77,7 +82,7 @@ Available Commands:
   start       Start Azure data collection service for BloodHound Enterprise
 
 Flags:
-  -c, --config string          AzureHound configuration file (default: /Users/dlees/.config/azurehound/config.json)
+  -c, --config string          AzureHound configuration file (.config/azurehound/config.json)
   -h, --help                   help for azurehound
       --json                   Output logs as json
   -j, --jwt string             Use an acquired JWT to authenticate into Azure
@@ -89,3 +94,10 @@ Flags:
 
 Use "azurehound [command] --help" for more information about a command.
 ```
+
+<p align="left">
+<a href="https://github.com/byt3n33dl3"><img src="https://avatars.githubusercontent.com/u/151133481?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/BloodHoundAD"><img src="https://avatars.githubusercontent.com/u/25502277?s=200&v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/specterops"><img src="https://avatars.githubusercontent.com/u/25406560?s=200&v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+<a href="https://github.com/chrismaddalena"><img src="https://avatars.githubusercontent.com/u/10526228?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
+</p>
