@@ -102,7 +102,7 @@ Flags:
 
 Use "azurehound [command] --help" for more information about a command.
 ```
-# Thanks To
+## Thanks To
 
 <p align="left">
 <a href="https://github.com/byt3n33dl3"><img src="https://avatars.githubusercontent.com/u/151133481?v=4" width="50" height="50" alt="" style="max-width: 100%;"></a>
