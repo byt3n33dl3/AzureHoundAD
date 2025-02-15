@@ -1,4 +1,4 @@
-module github.com/bloodhoundad/azurehound/v2
+module github.com/byt3n33dl3/AzureHoundAD/v2
 
 go 1.21
 
